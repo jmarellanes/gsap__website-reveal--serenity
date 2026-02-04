@@ -192,11 +192,11 @@ body {
   }
 
   &.left {
-    background: url("../assets/images/img-one.jpeg") no-repeat 50% 50% / cover;
+    background: url("../assets/images/img-02.webp") no-repeat 50% 50% / cover;
   }
 
   &.right {
-    background: url("../assets/images/img-three.jpeg") no-repeat 50% 50% / cover;
+    background: url("../assets/images/img-03.webp") no-repeat 50% 50% / cover;
   }
 }
 
