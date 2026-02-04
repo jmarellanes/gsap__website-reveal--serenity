@@ -145,6 +145,10 @@ body {
   overflow: hidden;
   position: relative;
 
+  backface-visibility: hidden;
+  outline: 1px solid transparent;
+  transform: translate3d(0, 0, 0);
+
   @media (width > 1024px) {
     inline-size: 60%;
   }
@@ -158,6 +162,7 @@ body {
 
 .hero-main-image__img-wrapper {
   grid-row: 1 /2;
+  overflow: hidden;
 }
 
 .hero-main-image__box {
