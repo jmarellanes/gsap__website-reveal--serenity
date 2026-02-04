@@ -4,21 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Jose Arellane" />
+    <meta name="author" content="Jose Arellanes" />
 
     <title>Title Description Here</title>
     <meta name="description" content="Site Description Here" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="src/assets/fonts/harmond-semibold-condensed.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="preload" href="src/assets/fonts/neue-metana-regular.woff2" as="font" type="font/woff2" crossorigin />
 
     <link rel="stylesheet" href="src/styles/style.css" />
     <script defer src="src/scripts/main.js" type="module"></script>
   </head>
 
   <body>
-    <p>MY Website</p>
+    <div class="site-wrapper">
+      <header class="site-header wrapper">
+        <nav class="primary-nav">
+          <button class="hamburger-toggle" aria-label="Open Menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </nav>
+
+        <p class="site-header__brand">Mental Peace</p>
+
+        <button class="hamburger-toggle" aria-label="Open Menu">
+          <i data-lucide="search"></i>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero wrapper">
+          <div class="hero-decoration-images">
+            <div class="left hero-decoration-images__img"></div>
+            <div class="right hero-decoration-images__img"></div>
+          </div>
+
+          <div class="hero-main-image">
+            <div class="hero-main-image__wrapper">
+              <div class="hero-main-image__box"></div>
+
+              <div class="hero-main-image__img-wrapper">
+                <img class="image" src="src/assets/images/img-two.jpeg" />
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-heading"><p class="title">serenity</p></div>
+
+          <div class="hero-navigation">
+            <div class="hero-navigation__wrapper">
+              <button class="prev">prev</button>
+              <button class="next">next</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
