@@ -39,8 +39,6 @@ mm.add({
     defaults: { ease: "expo.inOut" },
   });
 
-  gsap.set(".title, .primary-nav > button", { visibility: "visible" });
-
   tl.from("img", {
     duration: 3,
     scale: 2,
@@ -51,12 +49,6 @@ mm.add({
       duration: 2.4,
       y: "-100%",
     }, "boxReveal")
-
-    .add("innerImageFade")
-    .from("hero-main-image img", {
-      duration: 0.4,
-      opacity: 0,
-    }, "innerImageFade")
 
     .add("wrapperResize")
     .to(".hero-main-image__wrapper", {
@@ -81,10 +73,13 @@ mm.add({
     }, "shutterOpen")
 
     .add("contentReveal", "shutterOpen+=0.2")
-    .from(".hamburger-toggle, .hero-navigation > div, .site-header__brand", {
-      duration: 2,
-      opacity: 0,
+    .fromTo(".hamburger-toggle, .hero-navigation > div, .site-header__brand", {
       y: 30,
+      autoAlpha: 0, // Start state (matches your CSS)
+    }, {
+      duration: 2,
+      y: 0,
+      autoAlpha: 1,
       stagger: 0.1,
     }, "contentReveal")
 
