@@ -75,7 +75,7 @@ mm.add({
     .add("contentReveal", "shutterOpen+=0.2")
     .fromTo(".hamburger-toggle, .hero-navigation > div, .site-header__brand", {
       y: 30,
-      autoAlpha: 0, // Start state (matches your CSS)
+      autoAlpha: 0,
     }, {
       duration: 2,
       y: 0,
@@ -84,6 +84,7 @@ mm.add({
     }, "contentReveal")
 
     .add("textReveal", "contentReveal+=0.8")
+    .set(".title", { visibility: "visible" }, "textReveal")
     .from(".title .letter", {
       duration: 2,
       y: 100,
