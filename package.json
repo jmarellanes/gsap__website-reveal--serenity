@@ -1,8 +1,9 @@
 {
-  "name": "starter__vanilla",
+  "name": "gsap-website-reveal-serenity",
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "description": "The Shutter Reveal - modern GSAP intro",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
